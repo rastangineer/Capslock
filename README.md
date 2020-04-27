@@ -1,10 +1,6 @@
 # Capslock
 
-*Make CapsLock Great Again!*  
-
-![](images/trump.jpg)
-
-
+Forked from [Capslock by Vonng](https://github.com/Vonng/Capslock) but customized as per my needs.
 
 ## Why CapsLock
 
@@ -14,10 +10,6 @@
 * Well-Designed:  High-Freq key in hot-area. Bring lots of useful functionalities.
 * Compatiable: Work well with other modifiers, appliactions, devices.
 * Light-Weight:  Just a small script, carry it everywhere !
-* [Design Document](design.md)
-
-
-
 
 ## Platforms
 
@@ -25,14 +17,6 @@
   - macOS High Sierra (10.13)
   - macOS Sierra (10.12)
   - macOS EI Capitan (10.11)
-
-
-  - Old [XML]() Version (before OS X 10.11, *no longer maintained*) 
-- [CapsLock(Windows)](win/) via AutoHotKey  *(no longer maintianed)*
-  - Windows XP, Vista, 7, 8, 10
-
-
-
 
 ## Install (mac)
 
@@ -42,20 +26,17 @@
 
 ```bash
 # This Repo (open in safari)
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/rastangineer/Capslock/master/mac/capslock.json
 ```
 
-```bash
+<!-- ```bash
 # Karabiner-Elements Offical Script Gallery
 karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs.org%2Fosx%2Fkarabiner%2Fcomplex_modifications%2Fjson%2Fcaps_lock_enhancement.json
-```
+``` -->
 
 3. Open Karabiner, Tab "ComplexModification", Button "Add Item", and enable entries you like.
 4. Default conf file path is `$HOME/.config/karabiner/assets/complex_modifications`. Modify it if you like.
 5. Enable functions: `[App] karabiner-elements -> [Tab] Complex Modification -> Add Item`
-
-
-
 
 ## Usage (mac)
 
