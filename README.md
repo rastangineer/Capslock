@@ -16,7 +16,14 @@ Forked from [Capslock by Vonng](https://github.com/Vonng/Capslock) but customize
 - [CapsLock(Mac)](mac/)  via  [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
   - macOS High Sierra (10.13)
   - macOS Sierra (10.12)
-  - macOS EI Capitan (10.11)
+  - macOS El Capitan (10.11)
+
+## Pre-requisites
+
+- [Goku](https://github.com/yqrashawn/GokuRakuJoudo)
+- [watchexec](https://github.com/watchexec/watchexec)
+- [joker](https://github.com/candid82/joker)
+
 
 ## Install (mac)
 
