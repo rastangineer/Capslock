@@ -1,26 +1,24 @@
 {;; define application identifiers
  :applications {:chrome ["^com\\.google\\.Chrome$"]
                 :vscode ["^com\\.microsoft\\.VSCode$"]
-                :finder ["^com\\.apple\\.finder$"]
-                }
+                :finder ["^com\\.apple\\.finder$"]}
  :main [;;CHROME
-        {:des "F1 go to previous tab" :rules [[:f1 :!Tpage_up :chrome]]}
-        {:des "F2 go to next tab" :rules [[:f2 :!Tpage_down :chrome]]}
-        {:des "F3 to close tab" :rules [[:f3 :!Cw]]}
+        {:des "Chrome Fn Keys" :rules
+         [[:f1 :!Tpage_up :chrome] ;; Go to previous tab
+          [:f2 :!Tpage_down :chrome] ;; Go to next tab
+          [:f3 :!Cw] ;; Close tab
+          ]}
 
         ;; VSCODE
-        {:des "F1 go to previous tab" :rules [[:f1 :!CTOquote :vscode]]}
-        {:des "F2 go to next tab" :rules [[:f2 :!CTOnon_us_pound :vscode]]}
-        {:des "F3 to close tab" :rules [[:f3 :!Cw :vscode]]}
-        
-        ;;FINDER
-        {:des "F1 to go back" :rules [[:f1 :!COopen_bracket :finder]]}
-        {:des "F2 to cicle trough tabs" :rules [[:f2 :!Copen_bracket :finder]]}
-        {:des "F3 to close tab" :rules [[:f3 :!Cw :finder]]}
-        ]
- }
+        {:des "VSCode Fn Keys" :rules
+         [[:f1 :!CTOquote :vscode] ;; Go to previous editor tab
+          [:f2 :!CTOnon_us_pound :vscode] ;; Go to next editor tab
+          [:f3 :!Cw :vscode] ;; Close editor tab
+          ]}
 
-;; [:a :1 :chrome] -- [<from> <to> <conditions>]
-;; this means from a to 1 under the condition of chrome
-;; :chrome is a predefined application condition
-;; it's same with karabiner
+        ;;FINDER
+        {:des "Finder Fn Keys" :rules
+         [[:f1 :!COopen_bracket :finder];; Go back
+          [:f2 :!Copen_bracket :finder];; Cycle through windowss
+          [:f3 :!Cw :finder];; Close tab
+          ]}]}
